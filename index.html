@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap" rel="stylesheet">
+    <title>Request</title>
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="right-container">
+            <img src="/assets/desktop/logo.svg" class="icon" alt="">
+            <img src="/assets/desktop/bg-pattern-dots.svg" class="boubles-picture" alt="">
+            <img src="/assets/desktop/image-host.jpg" alt="" class="wallpaper">
+            <div class="info-container">
+                <div class="info-container-small">
+                    <h1 class="h1">PUBLISH YOUR PODCASTS <span class="span">EVERYWHERE.</span></h1>
+                    <p class="p">Upload your audio to Pod with a single click. We'll then distribute your podcast to
+                        Spotify. Apple Podcasts, Google Podcasts, Pocket Casts and more!
+                    </p>
+                    <form id="form" class="form-css" onsubmit="return validation()">
+                        <input id="email" class="email-css" type="text" placeholder="Email address" >
+                        <input class="button" type="submit" value="Request Access">
+                    </form>
+                    <p id="text" class="error-message"></p>
+                    <div class="images">
+                        <img src="/assets/desktop/spotify.svg" class="img" alt="">
+                        <img src="/assets/desktop/apple-podcast.svg" class="img" alt="">
+                        <img src="/assets/desktop/google-podcasts.svg" class="img" alt="">
+                        <img src="/assets/desktop/pocket-casts.svg" class="img" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

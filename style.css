@@ -1,0 +1,192 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+:root {
+    --green: #54e6af;
+    --Very-dark-blue: #121725;
+    --bright-blue: #5a668a;
+    --dark-blue: #2c344b;
+    --bright-gray: #c2cbe5;
+    --hover: #B3FFE2;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.body-container {
+    position: relative;
+    height: 900px;
+    width: 1440px;
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top: -30px;
+    z-index: 10;
+}
+
+.boubles-picture {
+    position: absolute;
+    right: 0px;
+    bottom: -50px;
+    z-index: 10;
+}
+
+.right-container {
+    width: 1275px;
+    height: 640px;
+    background-color: var(--Very-dark-blue);
+    position: relative;
+}
+
+.wallpaper {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.info-container {
+    width: 723px;
+    height: 509px;
+    background-color: var(--Very-dark-blue);
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.info-container-small {
+    width: 665px;
+    height: 421px;
+    background-color: var(--Very-dark-blue);
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.h1 {
+    width: 665px;
+    height: 124px;
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    color: var(--green)
+}
+
+.span {
+    color: white;
+}
+
+.p {
+    width: 445px;
+    height: 84px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    color: var(--bright-gray);
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 536px;
+}
+
+.form-css {
+    width: 427px;
+    height: 56px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.email-css {
+    color: white;
+    width: 392px;
+    height: 56px;
+    border-radius: 28px;
+    border: none;
+    background: var(--dark-blue);
+    padding-left: 35px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.email::placeholder {
+    color: var(--bright-gray);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: 'Chivo', sans-serif;
+}
+
+.button {
+    font-family: 'Chivo', sans-serif;
+    position: absolute;
+    right: 5px;
+    width: 162px;
+    height: 46px;
+    background: var(--green);
+    box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
+    border-radius: 28px;
+    border: none;
+    color:var(--Very-dark-blue);
+    font-weight: bold;
+    letter-spacing: none;
+    font-size: 14px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background: var(--hover);
+}
+
+
+input:focus {
+    outline: none;
+}
+
+.error-message{
+    font-family: 'Chivo', sans-serif;
+    color:red;
+    margin:8px 0px 0px 35px;
+    font-size: 12px;
+    font-weight: 400;
+}
