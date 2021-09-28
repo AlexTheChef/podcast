@@ -9,19 +9,17 @@ function validation(event) {
     
 
     if (email.match(pattern)) {
-        form.classList.add("valid")
-        form.classList.remove("invalid")
+       
+        text.innerHTML = ""
     }
     else {
-        form.classList.remove("valid")
-        form.classList.add("invalid")
+       
         text.innerHTML = "Oops! Please check your email"
         
     }
 
     if (email == "") {
-        form.classList.remove("valid")
-        form.classList.add("invalid")
+       
         text.innerHTML = "Oops! Please add your email"
     }
 
