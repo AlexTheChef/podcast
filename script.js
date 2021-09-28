@@ -1,4 +1,6 @@
-function validation() {
+function validation(event) {
+    event.preventDefault()
+
     let form = document.getElementById("form");
     let email = document.getElementById("email").value;
     let text = document.getElementById("text");
@@ -22,9 +24,7 @@ function validation() {
         form.classList.add("invalid")
         text.innerHTML = "Oops! Please add your email"
     }
+
+    return false
 }
 
-document.getElementById("form").addEventeListener('submit', function(e){
-    e.preventDefault();
-    alert('Form is submited')
-})
